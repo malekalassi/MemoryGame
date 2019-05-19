@@ -48,6 +48,7 @@ public class OyunYonetici {
         if(sayac == bitis){
             SureHesaplayici.timer.stop();
             screen.puandeger.setText(String.valueOf(puan*adet));
+           
             JOptionPane.showMessageDialog(screen, "Oyun bitti.", "Mesaj", JOptionPane.INFORMATION_MESSAGE);
             
         }

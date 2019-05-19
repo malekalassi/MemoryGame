@@ -159,10 +159,16 @@ public class OyunScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_ComboBoxActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
         buttun.Gizleme(Toggles.buttons.length,Toggles.buttons);
-        sh= new SureHesaplayici(suredeger);
+        try {
+             sh= new SureHesaplayici(suredeger);
         
         new Thread(sh).start();
+        } catch (Exception e) {
+        }
+       
+        Toggles.buttons=null;
         
         
         
